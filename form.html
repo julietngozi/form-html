@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Eze Juliet Contact Form</title>
+</head>
+<body>
+    <h1>Contact Us</h1>
+
+    <form action="#" method="POST">
+        <!-- Personal Details-->
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required><br><br>
+            
+            <label for="Address">Address</label><br>
+            <input type="text" id="address" name="address" placeholder="Enter your address" required><br><br>
+
+            <label for="phone">Phone</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="e.g. 08024681012" pattern="[0-9] {11}" maxlength="11" required><br><br>
+
+
+            <label for="state">Select your <span class="requried-state">State</span></label>
+            <select name="state" id="state" required>
+                <option value="" disabled selected> select a state</option>
+                <option value="Abia">Abia</option>
+                <option value="Anambra">Anambra</option>
+                <option value="Ebonyi">Ebonyi</option>
+                <option value="Enugu">Enugu</option>
+                <option value="Imo">Imo</option>
+                <option value="Akwa Ibom">Akwa Ibom</option>
+                <option value="Cross River">Cross River</option>
+                <option value="Bayelsa">Bayelsa</option>
+            </select><br><br>
+
+            <label for="country">Country</label><br>
+            <input type="text" id="country" name="country" placeholder="Enter your country" required><br><br>
+        </fieldset>
+        <!-- Gender -->
+        <fieldset>
+            <legend>Gender</legend>
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="Female" required>
+            <label for="female">Female</label>
+        </fieldset><br>
+
+        <!-- Interest -->
+        <fieldset>
+            <legend>Interests</legend>
+
+            <input type="checkbox" id="HTML" name="interest" value="HTML">
+            <label for="coding">HTML</label>
+
+            <input type="checkbox" id="CSS" name="interest" value="CSS">
+            <label for="CSS">CSS</label>
+
+            <input type="checkbox" id="JavaScript" name="interest" value="JavaScript">
+            <label for="JavaScript">JavaScript</label>
+
+            <input type="checkbox" id="Python" name="interest" value="Python">
+            <label for="Python">Python</label>
+
+            <!-- PDF upload-->
+            <label for="pdfupload">Or upload your PDF file (CV or ID):</label><br>
+            <input type="file" id="pdfupload" name="pdfupload" accept="application/pdf">
+        </fieldset><br>
+
+        <!-- Topic -->
+        <fieldset>
+            <legend>Topic</legend>
+
+            <label for="topic">Select Topic:</label><br>
+            <select id="topic" name="topic" required>
+                <option value="">-- Please Select --</option>
+                <option value="Support">Support</option>
+                <option value="Feedback">Feedback</option>
+                <option value="General Inquiry">General Inquiry</option>
+            </select>
+        </fieldset><br>
+
+        <!-- Message-->
+        <fieldset>
+            <legend>Message</legend>
+
+            <label for="message">Your Message</label><br>
+            <textarea id="message" name="message" rows="5" cols="50" placeholder="Write your message here..." required></textarea>
+
+            <label>
+                <input type="checkbox" name="terms" required>
+                I agree to the events terms and conditions <span class="required-star">*</span>
+            </label>
+        </fieldset>
+        
+
+        <!-- Submit-->
+        <input type="submit" value="Submit Form">
+        
+    </form>
+</body>
+
+
+</html>
